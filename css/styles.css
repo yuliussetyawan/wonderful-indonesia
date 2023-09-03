@@ -140,7 +140,7 @@ img:not(.nav-logo) {
 /* buttons */
 .btn {
   cursor: pointer;
-  color: var(--grey-900);
+  color: var(--primary-100);
   background: var(--primary-500);
   border: transparent;
   border-radius: var(--borderRadius);
@@ -529,5 +529,56 @@ About
   .about-photo {
     border-radius: 0.5rem;
     position: relative;
+  }
+}
+
+/*
+=============== 
+Services
+===============
+*/
+.services {
+  background: var(--primary-200);
+  text-align: center;
+  margin-bottom: 3rem;
+}
+.service-icon {
+  font-size: 2rem;
+  margin-bottom: 1.5rem;
+  display: inline-block;
+  color: var(--primary-500);
+  padding: 0.5rem;
+  background: var(--grey-600);
+}
+.service-text{
+  max-width: 20rem;
+  margin-left: auto;
+  margin-right: auto;
+}
+@media screen and (min-width: 576px){
+  .services-center {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+  .service {
+    flex: 0 0 calc(33.3% - 1rem);
+    margin-bottom: 1rem;
+  }
+}
+
+@media screen and (min-width: 1176px){
+  .service {
+    display: flex;
+    text-align: left;
+  }
+  .service-icon {
+    align-self: flex-start;
+  }
+  .service-info {
+    padding-left: 1rem;
+  }
+  .service-title {
+    margin-bottom: 0.5rem;
   }
 }
