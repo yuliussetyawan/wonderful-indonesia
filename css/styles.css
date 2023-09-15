@@ -599,7 +599,7 @@ Featured Tours
 }
 .tour-card:hover{
   box-shadow: var(--shadow-3);
-  transform; scale(1.02);
+  transform: scale(1.02);
 }
 .tour-img-container {
   position: relative;
@@ -715,5 +715,50 @@ Contact
     padding-left: 2rem;
     flex: 1 1 auto;
     max-width: 100%;
+  }
+}
+
+/*
+=====================
+Gallery
+=====================
+*/
+.gallery-img-container{
+  position: relative;
+}
+.gallery-img{
+  height: 17rem;
+  object-fit: cover;
+  transition: var(--transition);
+}
+.gallery-icon{
+  position: absolute;
+  font-size: 2rem;
+  color: var(--grey-50);
+  cursor: pointer;
+  transition: var(--transition);
+  opacity: 0;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, 50%);
+}
+.gallery-img-container:hover .gallery-icon{
+  opacity: 1;
+}
+.gallery-img-container:hover .gallery-img {
+  opacity: 0.5;
+}
+@media screen and (min-width: 768px){
+  .gallery-center {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .gallery-img-container{
+    flex: 0 0 50%;
+  }
+}
+@media screen and (min-width: 992px){
+  .gallery-img-container{
+    flex: 0 0 25%;
   }
 }
