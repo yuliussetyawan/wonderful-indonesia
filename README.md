@@ -10,7 +10,6 @@ Welcome to the "Wonderful Indonesia" project, a landing page dedicated to showca
 - [Features](#features)
 - [Usage](#usage)
 - [Contributing](#contributing)
-- [License](#license)
 
 ## Demo
 
