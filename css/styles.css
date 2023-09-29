@@ -359,6 +359,7 @@ Navbar
   font-size: 1.5rem;
   cursor: pointer;
   transition: var(--transition);
+  animation: bounce 2s ease infinite;
 }
 .nav-toggle:hover {
   transform: scale(1.2);
@@ -452,18 +453,21 @@ Hero
 }
 .hero-banner h1 {
   text-transform: uppercase;
+  animation: slideFromRight 3s ease-in-out 1;
 }
 .hero-banner p {
   color: var(--primary-800);
   margin-right: auto;
   margin-left: auto;
   max-width: 35rem;
+  animation: slideFromLeft 3s ease-in-out 1;
 }
 .hero-btn {
   padding: 1rem 1.5rem;
   font-size: 1.25rem;
   color: var(--primary-500);
   background: var(--primary-900);
+  animation: show 3s linear 1;
 }
 .hero-btn:hover {
   color: var(--primary-100);
@@ -790,19 +794,19 @@ Footer
   text-transform: uppercase;
   transition: var(--transition);
 }
-.footer-link:hover{
+.footer-link:hover {
   color: var(--primary-500);
 }
-.footer-icon{
+.footer-icon {
   font-size: 2rem;
   margin-right: 1rem;
   color: var(--primary-500);
   transition: var(--transition);
 }
-.footer-icon:hover{
+.footer-icon:hover {
   color: var(--primary-300);
 }
-.copyright{
+.copyright {
   text-transform: capitalize;
   max-width: none;
   letter-spacing: var(--letterSpacing);
