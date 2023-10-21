@@ -625,6 +625,9 @@ Featured Tours
 }
 .tour-info {
   padding: 1.2rem 1.5rem;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
 }
 .tour-title {
   display: flex;
@@ -644,6 +647,7 @@ Featured Tours
   justify-content: space-between;
   align-self: flex-start;
   margin-top: auto;
+  width: 100%;
 }
 
 .tour-footer p {
