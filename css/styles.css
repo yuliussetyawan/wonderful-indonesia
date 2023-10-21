@@ -642,6 +642,8 @@ Featured Tours
   flex-wrap: wrap;
   align-items: center;
   justify-content: space-between;
+  align-self: flex-start;
+  margin-top: auto;
 }
 
 .tour-footer p {
@@ -661,6 +663,8 @@ Featured Tours
     flex-wrap: wrap;
   }
   .tour-card {
+    display: flex;
+    flex-direction: column;
     flex: 0 0 calc(50% - 2rem);
   }
 }
